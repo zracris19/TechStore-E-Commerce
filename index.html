@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TechStore | Modern E-Commerce</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+
+            Tech<span>Store</span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+                Home
+            </a>
+
+            <a href="#products">
+                <i class="fa-solid fa-box"></i>
+                Products
+            </a>
+
+            <a href="#about">
+                <i class="fa-solid fa-circle-info"></i>
+                About
+            </a>
+
+            <a href="#contact">
+                <i class="fa-solid fa-envelope"></i>
+                Contact
+            </a>
+
+        </nav>
+
+
+        <button class="cart-btn">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            Cart
+
+            <span id="cart-count">0</span>
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="small-title">
+                WELCOME TO TECHSTORE
+            </p>
+
+
+            <h1>
+
+                Upgrade Your
+                <span>Digital Life.</span>
+
+            </h1>
+
+
+            <p>
+
+                Temukan berbagai perangkat teknologi
+                berkualitas dengan desain modern
+                dan harga terbaik.
+
+            </p>
+
+
+            <a href="#products">
+
+                <button class="shop-btn">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    Shop Now
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
+
+    <section class="products" id="products">
+
+
+        <p class="small-title">
+            OUR PRODUCTS
+        </p>
+
+
+        <h2>
+            Featured Products
+        </h2>
+
+
+
+        <div class="product-container">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+
+                <img
+                    src="laptob.png"
+                    alt="Laptop">
+
+
+                <p class="category">
+                    Laptop
+                </p>
+
+
+                <h3>
+                    UltraBook Pro
+                </h3>
+
+
+                <p class="price">
+                    Rp 12.500.000
+                </p>
+
+
+                <button
+                    class="add-cart"
+                    onclick="addToCart('UltraBook Pro', 12500000)">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                    Add to Cart
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+
+                <img
+                    src="smartphone.png"
+                    alt="Smartphone">
+
+
+                <p class="category">
+                    Smartphone
+                </p>
+
+
+                <h3>
+                    SmartPhone X
+                </h3>
+
+
+                <p class="price">
+                    Rp 8.500.000
+                </p>
+
+
+                <button
+                    class="add-cart"
+                    onclick="addToCart('SmartPhone X', 8500000)">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                    Add to Cart
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+
+                <img
+                    src="headphones.png"
+                    alt="Headphones">
+
+
+                <p class="category">
+                    Audio
+                </p>
+
+
+                <h3>
+                    Pro Headphones
+                </h3>
+
+
+                <p class="price">
+                    Rp 1.500.000
+                </p>
+
+
+                <button
+                    class="add-cart"
+                    onclick="addToCart('Pro Headphones', 1500000)">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                    Add to Cart
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+
+                <img
+                    src="keyboard.png"
+                    alt="Keyboard">
+
+
+                <p class="category">
+                    Accessories
+                </p>
+
+
+                <h3>
+                    Mechanical Keyboard
+                </h3>
+
+
+                <p class="price">
+                    Rp 850.000
+                </p>
+
+
+                <button
+                    class="add-cart"
+                    onclick="addToCart('Mechanical Keyboard', 850000)">
+
+                    <i class="fa-solid fa-cart-plus"></i>
+
+                    Add to Cart
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about" id="about">
+
+
+        <p class="small-title">
+            ABOUT TECHSTORE
+        </p>
+
+
+        <h2>
+            Technology For Everyone
+        </h2>
+
+
+        <p>
+
+            TechStore adalah toko teknologi
+            sederhana yang menyediakan berbagai
+            perangkat untuk kebutuhan belajar,
+            bekerja, gaming, dan hiburan.
+
+        </p>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact" id="contact">
+
+
+        <p class="small-title">
+            CONTACT US
+        </p>
+
+
+        <h2>
+            Get In Touch
+        </h2>
+
+
+        <p>
+
+            Punya pertanyaan mengenai produk?
+            Hubungi kami dan kami akan membantu.
+
+        </p>
+
+
+        <br>
+
+
+        <a href="mailto:techstore@example.com">
+
+            <button class="shop-btn">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                Email Us
+
+            </button>
+
+        </a>
+
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+
+        <h3>
+
+            <i class="fa-solid fa-laptop"></i>
+
+            TechStore
+
+        </h3>
+
+
+        <p>
+            Modern technology for everyone.
+        </p>
+
+
+        <p>
+             2026 TechStore. All Rights Reserved.
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
